@@ -31,12 +31,13 @@
       }
       h1 {
         color: #0ce838;
+        font-size: 240%;
       }
       #poem > div {
         height: 1.2em;
       }
       .indent {
-        padding-left: 1em;
+        padding-left: 2em;
       }
     </style>
   </head>
@@ -88,8 +89,10 @@
       }
       // implement the rules of the poem
       function processPoem() {
+        // increases the counter by 1
         counter++;
-        if (counter % 5 === 0) {
+        // if the counter divided by 7 has a remainder of 0
+        if (counter % 7 === 0) {
           addBlankLine();
         } else if (counter % 5 === 2 || counter % 5 === 4) {
           // if the second or fourth line add the line with an indent
