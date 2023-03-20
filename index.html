@@ -12,7 +12,7 @@
     />
     <!-- end custom font -->
 
-    <title>We walk to you</title>
+    <title>Robots versus monsters</title>
 
     <!-- styles -->
     <style>
@@ -35,13 +35,13 @@
     </style>
   </head>
   <body>
-    <h1>We walk to you</h1>
+    <h1>Robots versus monsters</h1>
     <div id="poem"></div>
     <script>
       // set up the lists of words
-      const subjects = "you,I,we,they".split(","),
-        verbs = "run,walk,speak,drift,talk,whisper".split(","),
-        objects = "me,you,her,him,them".split(",");
+      const subjects = "a robot,the terminator,a droid,hal".split(","),
+        verbs = "lifts,throws,squashes,eats,spins,slices".split(","),
+        objects = "a zombie,a vampire,a werewolf,a deep one".split(",");
       // set up the counter
       let counter = 0;
 
@@ -61,7 +61,7 @@
           getRandomFromList(subjects) +
           " " +
           getRandomFromList(verbs) +
-          " to " +
+          " " +
           getRandomFromList(objects);
         const lineText = document.createTextNode(text);
         line.appendChild(lineText);
