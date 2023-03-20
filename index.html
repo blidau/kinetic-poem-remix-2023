@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- custom font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dokdo&display=swap"
       rel="stylesheet"
     />
     <!-- end custom font -->
@@ -17,14 +18,19 @@
     <!-- styles -->
     <style>
       body {
-        font-family: "Dosis", sans-serif;
+        font-family: 'Dokdo', cursive;
         margin: 2em;
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(149,52,191,1) 35%, rgba(0,212,255,1) 100%);
-        color: #0CE838;
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(149, 52, 191, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        color: #0ce838;
         font-size: 1.2em;
       }
       h1 {
-        color: #0CE838;
+        color: #0ce838;
       }
       #poem > div {
         height: 1.2em;
@@ -41,7 +47,7 @@
       // set up the lists of words
       const subjects = "a robot,the terminator,a droid,hal".split(","),
         verbs = "lifts,throws,squashes,eats,spins,slices".split(","),
-        objects = "a zombie,a vampire,a werewolf,a deep one".split(",");
+        objects = "a zombie,a vampire,a werewolf,a deep one,a redcap".split(",");
       // set up the counter
       let counter = 0;
 
